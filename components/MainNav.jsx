@@ -9,7 +9,7 @@ export const MainNav = ({ navbarRef, isFixed }) => {
 		<header
 			ref={navbarRef}
 			className={cn(
-				'w-full bg-[#222]',
+				'w-full bg-[#222] z-20',
 				isFixed ? 'fixed top-0 left-0' : 'absolute bottom-0 left-0'
 			)}
 		>

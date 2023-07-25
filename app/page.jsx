@@ -10,7 +10,7 @@ export default function HomePage() {
 			<div className="section-3 h-screen px-20 py-32">
 				<div className="grid grid-cols-[2fr_4fr_2fr] gap-y-10 ">
 					<div className="col-start-2">
-						<h2 className="scroll-m-20 border-b border-zinc-700 pb-2 text-3xl font-extrabold tracking-tight transition-colors mt-0">
+						<h2 className="scroll-m-20 border-b border-zinc-700 pb-2 text-2xl font-extrabold tracking-[0.14em] uppercase  transition-colors mt-0 text-[#ddd]">
 							About us
 						</h2>
 						<p className="p1 leading-8 mt-6 wrap">
@@ -32,14 +32,14 @@ export default function HomePage() {
 			</div>
 
 			<div
-				className="section-4 h-screen bg-fixed bg-cover bg-center"
+				className="section-4 relative h-screen bg-fixed bg-cover bg-center before:content-[''] before:block before:absolute before:bottom-0 before:left-0 before:right-0 before:z-10 before:h-[85%] before:bg-gradient-to-b before:from-transparent before:to-[#0000004d_100%]"
 				style={{ backgroundImage: `url(${hero4.src})` }}
 			></div>
 
 			<div className="section-5 h-screen px-20 py-32">
 				<div className="grid grid-cols-[1.5fr_4fr_1.5fr] gap-y-10 ">
 					<div className="col-start-2">
-						<h2 className="scroll-m-20 border-b border-zinc-700 pb-2 text-3xl font-extrabold tracking-tight transition-colors mt-0">
+						<h2 className="scroll-m-20 border-b border-zinc-700 pb-2 text-2xl font-extrabold tracking-[0.14em] uppercase  transition-colors mt-0 text-[#ddd]">
 							Our Mission
 						</h2>
 

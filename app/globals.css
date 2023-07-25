@@ -82,4 +82,13 @@ base,
 	body {
 		@apply bg-background text-foreground;
 	}
+
+	.footer-content li a {
+		transition: all 0.4s ease;
+	}
+
+	.icons a,
+	div.flex a {
+		transition: all 0.4s ease;
+	}
 }
