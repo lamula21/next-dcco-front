@@ -13,9 +13,8 @@ export const MainNav = ({ navbarRef, isFixed }) => {
 				isFixed ? 'fixed top-0 left-0' : 'absolute bottom-0 left-0'
 			)}
 		>
-			<div className="flex h-20 items-center w-full px-8">
+			<div className='flex h-20 items-center w-full px-8'>
 				<Navbar />
-
 				<MobileNav mainNavItems={SiteConfig} />
 			</div>
 		</header>

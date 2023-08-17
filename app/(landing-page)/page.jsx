@@ -4,16 +4,16 @@ import { Section1_2 } from '@/components/Section1_2'
 
 export default function HomePage() {
 	return (
-		<div className="wrapper bg-[#222]">
+		<main className='bg-[#222]'>
 			<Section1_2 />
 
-			<div className="section-3 h-screen px-20 py-32">
-				<div className="grid grid-cols-[2fr_4fr_2fr] gap-y-10 ">
-					<div className="col-start-2">
-						<h2 className="scroll-m-20 border-b border-zinc-700 pb-2 text-2xl font-extrabold tracking-[0.14em] uppercase  transition-colors mt-0 text-[#ddd]">
+			<div className='section-3 h-screen px-20 py-32'>
+				<div className='grid grid-cols-[2fr_4fr_2fr] gap-y-10 '>
+					<div className='col-start-2'>
+						<h2 className='scroll-m-20 border-b border-zinc-700 pb-2 text-2xl font-extrabold tracking-[0.14em] uppercase  transition-colors mt-0 text-[#ddd]'>
 							About us
 						</h2>
-						<p className="p1 leading-8 mt-6 wrap">
+						<p className='p1 leading-8 mt-6 wrap'>
 							The DC Code Officials Association (DCCOA) is a professional
 							organization for active building code officials in Washington,
 							D.C. Originally started in 2011, it is the Washington, D.C.
@@ -36,20 +36,20 @@ export default function HomePage() {
 				style={{ backgroundImage: `url(${hero4.src})` }}
 			></div>
 
-			<div className="section-5 h-screen px-20 py-32">
-				<div className="grid grid-cols-[1.5fr_4fr_1.5fr] gap-y-10 ">
-					<div className="col-start-2">
-						<h2 className="scroll-m-20 border-b border-zinc-700 pb-2 text-2xl font-extrabold tracking-[0.14em] uppercase  transition-colors mt-0 text-[#ddd]">
+			<div className='section-5 h-screen px-20 py-32'>
+				<div className='grid grid-cols-[1.5fr_4fr_1.5fr] gap-y-10 '>
+					<div className='col-start-2'>
+						<h2 className='scroll-m-20 border-b border-zinc-700 pb-2 text-2xl font-extrabold tracking-[0.14em] uppercase  transition-colors mt-0 text-[#ddd]'>
 							Our Mission
 						</h2>
 
-						<p className="leading-7 [&:not(:first-child)]:mt-6">
+						<p className='leading-7 [&:not(:first-child)]:mt-6'>
 							The District of Columbia Code Officials Association (DCCOA) is an
 							affiliated chapter of the International Code Council (ICC) and
 							shall promote its purposes.
 						</p>
 
-						<ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+						<ul className='my-6 ml-6 list-disc [&>li]:mt-2'>
 							<li>
 								<strong>Promote safety</strong> to life, health, and property
 								through the education and training of individuals involved in
@@ -97,6 +97,6 @@ export default function HomePage() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 	)
 }

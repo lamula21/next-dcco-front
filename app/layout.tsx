@@ -16,11 +16,11 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang="en" className="dark">
+		<html lang='en' className='dark'>
 			<head>
 				<link
-					href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-					rel="stylesheet"
+					href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+					rel='stylesheet'
 				/>
 			</head>
 			<body className={font.className}>
