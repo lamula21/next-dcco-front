@@ -1,13 +1,39 @@
+import logo from '@/public/logo-bg-removed.png'
+import hero from '@/public/hero.jpg'
+import hero2 from '@/public/hero2.jpg'
 import hero4 from '@/public/hero4.jpg'
+import Image from 'next/image'
 
-import { Section1_2 } from '@/components/Section1_2'
+import { Navbar } from '@/components/Navbar'
+import { MobileNav } from '@/components/MobileNav'
+import { SiteConfig } from '@/app/config/SiteConfig'
 
 export default function HomePage() {
 	return (
 		<main className='bg-[#222]'>
-			<Section1_2 />
+			{/* Section Image */}
+			<section
+				className="relative h-[calc(100vh-80px)] bg-fixed bg-cover bg-center before:content-[''] before:block before:absolute before:bottom-0 before:left-0 before:right-0 before:z-10 before:h-[33%] before:bg-gradient-to-b before:from-transparent before:via-[#0000004d_75%] before:to-[#0000004d_100%]"
+				style={{ backgroundImage: `url(${hero.src})` }}
+			>
+				{/* Logo */}
+				<div className='hidden lg:block absolute bottom-[20%] left-[5%]'>
+					<Image priority src={logo} width={130} alt='DCCO Association Logo' />
+				</div>
+			</section>
 
-			<div className='section-3 h-screen px-20 py-32'>
+			<aside className='sticky top-0 flex bg-[#222] h-20 items-center w-full px-8 border-y border-[#333] z-20'>
+				<Navbar />
+				<MobileNav mainNavItems={SiteConfig} />
+			</aside>
+
+			{/* Section Image */}
+			<section
+				className="relative h-screen bg-fixed bg-cover bg-center before:content-[''] before:block before:absolute before:bottom-0 before:left-0 before:right-0 before:z-10 before:h-[85%] before:bg-gradient-to-b before:from-transparent before:to-[#0000004d_100%]"
+				style={{ backgroundImage: `url(${hero2.src})` }}
+			></section>
+
+			<section className='h-screen px-20 py-32'>
 				<div className='grid grid-cols-[2fr_4fr_2fr] gap-y-10 '>
 					<div className='col-start-2'>
 						<h2 className='scroll-m-20 border-b border-zinc-700 pb-2 text-2xl font-extrabold tracking-[0.14em] uppercase  transition-colors mt-0 text-[#ddd]'>
@@ -29,14 +55,15 @@ export default function HomePage() {
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div
-				className="section-4 relative h-screen bg-fixed bg-cover bg-center before:content-[''] before:block before:absolute before:bottom-0 before:left-0 before:right-0 before:z-10 before:h-[85%] before:bg-gradient-to-b before:from-transparent before:to-[#0000004d_100%]"
+			{/* Section Image */}
+			<section
+				className="relative h-screen bg-fixed bg-cover bg-center before:content-[''] before:block before:absolute before:bottom-0 before:left-0 before:right-0 before:z-10 before:h-[85%] before:bg-gradient-to-b before:from-transparent before:to-[#0000004d_100%]"
 				style={{ backgroundImage: `url(${hero4.src})` }}
-			></div>
+			></section>
 
-			<div className='section-5 h-screen px-20 py-32'>
+			<section className='h-screen px-20 py-32'>
 				<div className='grid grid-cols-[1.5fr_4fr_1.5fr] gap-y-10 '>
 					<div className='col-start-2'>
 						<h2 className='scroll-m-20 border-b border-zinc-700 pb-2 text-2xl font-extrabold tracking-[0.14em] uppercase  transition-colors mt-0 text-[#ddd]'>
@@ -96,7 +123,7 @@ export default function HomePage() {
 						</ul>
 					</div>
 				</div>
-			</div>
+			</section>
 		</main>
 	)
 }

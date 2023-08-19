@@ -16,6 +16,9 @@ module.exports = {
 			},
 		},
 		extend: {
+			backgroundImage: {
+				'super-gradient': 'var(--linear-gradient)',
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
