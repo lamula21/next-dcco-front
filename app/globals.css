@@ -126,4 +126,8 @@ base,
 	div.flex a {
 		transition: all 0.4s ease;
 	}
+
+	.text-balance {
+		text-wrap: balance;
+	}
 }
