@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils'
 import React from 'react'
 
-export function Header({ title, description, className, textStyle }) {
+export function MemberHeader({ title, description, className, textStyle }) {
 	return (
 		<div className={cn('mx-auto max-w-2xl sm:text-center', className)}>
 			<h2
@@ -13,7 +13,7 @@ export function Header({ title, description, className, textStyle }) {
 				{title}
 			</h2>
 			{description && (
-				<p className='text-[#B1AAA0] md:text-xl leading-8 mt-6'>
+				<p className="text-[#B1AAA0] md:text-xl leading-8 mt-6">
 					{description}
 				</p>
 			)}

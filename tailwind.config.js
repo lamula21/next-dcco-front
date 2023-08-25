@@ -20,6 +20,8 @@ module.exports = {
 				'super-gradient': 'var(--linear-gradient)',
 			},
 			colors: {
+				supershadow:
+					'0 2.8px 2.2px #d3d3d305, 0 6.7px 5.3px #d3d3d307, 0 12.5px 10px #d3d3d309, 0 22.3px 17.9px #d3d3d30b, 0 41.8px 33.4px #d3d3d30d, 0 100px 80px #d3d3d312',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import MissionCard from '../components/MissionCard'
 import { Contact } from '@/components/Contact'
+import SectionHeader from '../../components/SectionHeader'
 
 export default function AboutPage() {
 	return (
@@ -91,23 +92,11 @@ export default function AboutPage() {
 
 			{/* Mission */}
 			<section className="container py-14">
-				<div className="text-left lg:text-center">
-					<div className="lg:pr-4">
-						<div className="lg:mx-auto lg:max-w-3xl">
-							<p className="text-base font-semibold leading-7 text-[#C07331]">
-								OUR MISSION
-							</p>
-							<h1 className="mt-2 text-3xl font-bold tracking-tight text-[#D6D3CD] sm:text-4xl">
-								What We Do
-							</h1>
-							<p className="mt-6 text-xl leading-8 text-[#D6D3CD]">
-								The District of Columbia Code Officials Association (DCCOA) is
-								an affiliated chapter of the International Code Council (ICC)
-								and shall promote its purposes.
-							</p>
-						</div>
-					</div>
-				</div>
+				<SectionHeader
+					subtitle="OUR MISSION"
+					title="What We Do"
+					description="The District of Columbia Code Officials Association (DCCOA) is an affiliated chapter of the International Code Council (ICC) and shall promote its purposes."
+				/>
 
 				<div className="px-5 py-24 mx-auto">
 					<div className="flex flex-wrap -m-4">

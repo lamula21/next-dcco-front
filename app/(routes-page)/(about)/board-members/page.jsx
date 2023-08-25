@@ -9,15 +9,15 @@ import walocha from '@/public/walocha.jpg'
 import whitescarve from '@/public/whitescarve.png'
 
 import { MemberList } from '../components/MemberList'
+import { MemberHeader } from '../components/MemberHeader'
 import IconLink from '@/components/IconLink'
-import { Header } from '../components/Header'
 
 export default function BoardMembersPage() {
 	return (
 		<main className="bg-[#222] py-32 w-full">
 			{/* Members */}
 			<section className="container">
-				<Header
+				<MemberHeader
 					title="Meet our leadership"
 					description={`
 						We're a dynamic group of professionals who are passionate about what we do and dedicated to delivering the best results for our clients.
@@ -92,7 +92,7 @@ export default function BoardMembersPage() {
 
 			{/* Legends */}
 			<section className="container pt-10">
-				<Header
+				<MemberHeader
 					className="px-6 pt-40"
 					title="Legends"
 					description="Meet our former professionals at DCCOA"
@@ -101,7 +101,7 @@ export default function BoardMembersPage() {
 
 				<div className="px-6 my-20 grid grid-cols-1 gap-x-8 gap-y-10  max-w-7xl xl:px-8 xl:grid-cols-5">
 					<div className="m-0 sm:text-left col-span-2 max-w-2xl sticky xl:text-center xl:col-span-2 ">
-						<Header
+						<MemberHeader
 							className="xl:sticky xl:top-40"
 							title="2020-2021"
 							textStyle="text-start text-3xl md:text-4xl xl:text-center"
@@ -151,7 +151,7 @@ export default function BoardMembersPage() {
 
 				<div className="px-6 my-20 grid grid-cols-1 gap-x-8 gap-y-10  max-w-7xl xl:px-8 xl:grid-cols-5">
 					<div className="m-0 sm:text-left col-span-2 max-w-2xl sticky xl:text-center xl:col-span-2">
-						<Header
+						<MemberHeader
 							className="xl:sticky xl:top-40"
 							title="2019-2020"
 							textStyle="text-start text-3xl md:text-4xl xl:text-center"

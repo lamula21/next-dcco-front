@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Libre_Franklin } from 'next/font/google'
 import { Footer } from '@/components/Footer'
+import { TailwindIndicator } from '@/components/TailwindIndicator'
 
 const font = Libre_Franklin({ subsets: ['latin'] })
 
@@ -16,16 +17,17 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang='en' className='dark'>
+		<html lang="en" className="dark">
 			<head>
 				<link
-					href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
-					rel='stylesheet'
+					href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+					rel="stylesheet"
 				/>
 			</head>
 			<body className={font.className}>
 				{children}
 				<Footer />
+				<TailwindIndicator />
 			</body>
 		</html>
 	)
