@@ -16,9 +16,9 @@ export function MembershipCard({ price, title, bullet_points, key }) {
 
 				<ul className="text-sm list-disc grow">
 					{bullet_points &&
-						bullet_points.map((item) => {
+						bullet_points.map((item, index) => {
 							return (
-								<li className="text-[#D6D3CD] list-none flex gap-1">
+								<li className="text-[#D6D3CD] list-none flex gap-1" key={index}>
 									<span>
 										<i className="bx bx-check text-xl text-[#C07331]"></i>
 									</span>

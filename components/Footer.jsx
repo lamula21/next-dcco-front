@@ -54,8 +54,8 @@ export function Footer() {
 
 					<img src="" alt="" />
 					<p className="py-2 text-[#d6d6d6] text-base font-normal max-w-sm">
-						Want to know what we're up to? Sign up for the newsletter and join
-						our tribe.
+						Want to know what we&apos;re up to? Sign up for the newsletter and
+						join our tribe.
 					</p>
 					<div className="relative flex mt-5">
 						<input
