@@ -81,10 +81,10 @@ export function Contact() {
 							id="dropdown"
 							className="w-full bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:ring-yellow-700 text-base outline-none text-gray-100 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
 						>
-							<option>Reason 1</option>
-							<option>Reason 2</option>
-							<option>Reason 3</option>
-							<option>Reason 4</option>
+							<option>Membership</option>
+							<option>Sponsorship</option>
+							<option>E-Courses</option>
+							<option>Others</option>
 						</select>
 					</div>
 

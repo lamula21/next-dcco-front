@@ -114,6 +114,11 @@ base,
 		@apply border-border;
 		scrollbar-gutter: stable;
 	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
 	body {
 		@apply bg-background text-foreground;
 		background-color: #222;
