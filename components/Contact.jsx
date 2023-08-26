@@ -26,14 +26,14 @@ export function Contact() {
 					<div className="relative mb-4 flex gap-4">
 						<div>
 							<label
-								htmlFor="contactEmail"
+								htmlFor="name"
 								className="leading-7 text-sm text-[#D6D3CD]"
 							>
 								Name
 							</label>
 							<input
-								type="email"
-								id="contactEmail"
+								type="text"
+								id="name"
 								className="w-full bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:ring-yellow-700 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
 							/>
 						</div>
@@ -55,14 +55,14 @@ export function Contact() {
 
 					<div className="relative mb-2">
 						<label
-							htmlFor="contactEmail"
+							htmlFor="contact-email"
 							className="leading-7 text-sm text-[#D6D3CD] after:content-['*'] after:ml-1 after:text-red-500"
 						>
 							Email
 						</label>
 						<input
 							type="email"
-							id="contactEmail"
+							id="contact-email"
 							className="peer w-full bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:ring-yellow-700 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
 						/>
 						<p className="mt-1 invisible peer-invalid:visible text-red-500 text-sm">
