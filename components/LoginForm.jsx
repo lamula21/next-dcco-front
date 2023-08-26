@@ -74,7 +74,7 @@ export default function LoginForm() {
 					</div>
 
 					<p className="mt-2 text-sm text-gray-500">
-						Don't have an account?{' '}
+						Don&apos;t have an account?{' '}
 						<a
 							href="#"
 							className="font-semibold leading-6 text-[#C07331] hover:text-yellow-700"

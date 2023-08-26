@@ -5,7 +5,7 @@ export function Newsletter() {
 				<div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
 					<div className="max-w-xl lg:max-w-lg">
 						<h2 className="text-3xl font-bold tracking-tight text-[#C07331] sm:text-4xl">
-							Want to know what's happening?
+							Want to know what&apos;s happening?
 						</h2>
 						<p className="mt-4 text-lg leading-8 text-white">
 							Sign up for our quarterly newsletter and become part of our tribe
@@ -52,7 +52,7 @@ export function Newsletter() {
 								No spam
 							</span>
 							<p className="mt-2 leading-7 text-whie">
-								Your inbox is safe with us. We promise, no spam – just
+								Your inbox is safe with us. We promise, no spam - just
 								meaningful content in every newsletter.
 							</p>
 						</div>

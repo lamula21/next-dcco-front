@@ -80,7 +80,7 @@ export default function AboutPage() {
 												We are professionals.
 											</strong>{' '}
 											The association invites broader involvement from
-											professionals to enhance D.C.'s code enforcement.
+											professionals to enhance D.C&apos;s code enforcement.
 										</span>
 									</li>
 								</ul>

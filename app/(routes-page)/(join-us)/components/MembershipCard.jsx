@@ -1,7 +1,7 @@
 //props: price, title, description
-export function MembershipCard({ price, title, bullet_points }) {
+export function MembershipCard({ price, title, bullet_points, key }) {
 	return (
-		<div className="p-4 md:w-1/2 lg:w-1/3 xl:w-1/4">
+		<div className="p-4 md:w-1/2 lg:w-1/3 xl:w-1/4" key={key}>
 			<div className="group p-6 flex flex-col border-2 border-[#D6D3CD]/20 rounded-lg max-w-sm md:max-w-md sm:w-auto transition-all duration-300 hover:scale-110 hover:ring-2 hover:border-yellow-700 hover:ring-yellow-500/25 hover:shadow-2xl">
 				<div className="uppercase text-[#C07331] font-bold my-2 text-xl">
 					{title}
