@@ -13,7 +13,7 @@ export default function MembershipPage() {
 				/>
 
 				<div className="flex flex-wrap mx-auto">
-					{membership_data.map((item) => {
+					{/* {membership_data.map((item) => {
 						return (
 							<MembershipCard
 								key={item.id}
@@ -22,7 +22,7 @@ export default function MembershipPage() {
 								bullet_points={item.bullet_points}
 							></MembershipCard>
 						)
-					})}
+					})} */}
 				</div>
 			</section>
 		</main>
