@@ -61,10 +61,10 @@ export function Navbar() {
 											/>
 
 											<div className="z-10 pointer-events-none transition-opacity duration-300 mb-2 mt-4 text-lg font-medium opacity-0 group-hover:opacity-100">
-												hey
+												Learn about us.
 											</div>
 											<p className="z-10 pointer-events-none transition-opacity duration-300 text-sm leading-tight text-muted-foreground opacity-0 group-hover:opacity-100">
-												Some text about image
+												Stay tuned!
 											</p>
 										</a>
 									</NavigationMenuLink>
@@ -75,8 +75,8 @@ export function Navbar() {
 								<ListItem href="/board-members" title="Board Members">
 									Visit our board members.
 								</ListItem>
-								<ListItem href="/comittees" title="Comittees">
-									Explore our comittees.
+								<ListItem href="/legends" title="Legends">
+									Explore our legend members.
 								</ListItem>
 								<ListItem
 									href="https://www.iccsafe.org/"
@@ -94,7 +94,7 @@ export function Navbar() {
 
 					<NavigationMenuItem>
 						<NavigationMenuTrigger className="text-[#CCCCCC] text-sm font-semibold tracking-wide bg-transparent uppercase">
-							Join Us
+							<Link href="/join-us">Join Us</Link>
 						</NavigationMenuTrigger>
 						<NavigationMenuContent className="bg-[#222]">
 							<ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -113,18 +113,18 @@ export function Navbar() {
 											/>
 
 											<div className="z-10 pointer-events-none transition-opacity duration-300 mb-2 mt-4 text-lg font-medium opacity-0 group-hover:opacity-100">
-												hey
+												Join Us.
 											</div>
 											<p className="z-10 pointer-events-none transition-opacity duration-300 text-sm leading-tight text-muted-foreground opacity-0 group-hover:opacity-100">
-												Some text about image
+												Connect. Share. Grow. Get Involved Today!
 											</p>
 										</a>
 									</NavigationMenuLink>
 								</li>
-								<ListItem href="/membership" title="Membership">
+								<ListItem href="/join-us/membership" title="Membership">
 									Join our club.
 								</ListItem>
-								<ListItem href="/sponsorship" title="Sponsorship">
+								<ListItem href="/join-us/sponsorship" title="Sponsorship">
 									Support our cause.
 								</ListItem>
 							</ul>
@@ -218,27 +218,14 @@ export function Navbar() {
 
 					{/* Anchor Container */}
 					<NavigationMenuItem>
-						<Link href="/standards" legacyBehavior passHref>
+						<Link href="/standards-resources" legacyBehavior passHref>
 							<NavigationMenuLink
 								className={cn(
 									navigationMenuTriggerStyle(),
 									'text-[#CCCCCC] text-sm font-semibold tracking-wide bg-transparent uppercase'
 								)}
 							>
-								Standards
-							</NavigationMenuLink>
-						</Link>
-					</NavigationMenuItem>
-
-					<NavigationMenuItem>
-						<Link href="/resources" legacyBehavior passHref>
-							<NavigationMenuLink
-								className={cn(
-									navigationMenuTriggerStyle(),
-									'text-[#CCCCCC] text-sm font-semibold tracking-wide bg-transparent uppercase'
-								)}
-							>
-								Resources
+								Standards & Resources
 							</NavigationMenuLink>
 						</Link>
 					</NavigationMenuItem>

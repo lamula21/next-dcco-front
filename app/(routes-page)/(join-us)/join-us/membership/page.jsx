@@ -1,6 +1,6 @@
-import SectionHeader from '../../components/SectionHeader'
-import { MembershipCard } from '../components/MembershipCard'
-import { membership_data } from '../components/membership-data'
+import SectionHeader from '../../../components/SectionHeader'
+import { MembershipCard } from '../../components/MembershipCard'
+import { membership_data } from '../../components/membership-data'
 
 export default function MembershipPage() {
 	return (

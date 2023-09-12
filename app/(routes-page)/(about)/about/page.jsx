@@ -50,7 +50,7 @@ export default function AboutPage() {
 									inspections, and related activities. Broader participation of
 									interested parties, including architects, engineers,
 									contractors, developers, and others interested in improving
-									code enforcement in D.c., is warmly invited.
+									code enforcement in D.C., is warmly invited.
 								</p>
 								<ul role="list" className="mt-8 space-y-8 text-gray-600">
 									<li className="flex gap-x-3">

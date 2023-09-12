@@ -62,3 +62,12 @@ export const months = [
 	'November',
 	'December',
 ]
+export const days = [
+	'Sunday',
+	'Monday',
+	'Tuesday',
+	'Wedneday',
+	'Thrusday',
+	'Friday',
+	'Saturday',
+]

@@ -13,8 +13,8 @@ export const membership_data = [
           at the rate fixed by these By-Laws. An Active Individual Member shall be entitled to one vote and have 
         the ability to serve on the Board of Directors or a Committee as directed by these By-Laws.`,
 		bullet_points: [
-			'Employed by governmental entity or DCRA Third Party agency.',
-			'Actively enforces building codes and ordinances.',
+			'Employed by governmental entity or by an active D.C. Third Party agency.',
+			'Actively engaged and enforce building codes and ordinances.',
 			'Entitled to one voting right.',
 			'Board/Committee service as per By-Laws.',
 		],
@@ -35,10 +35,9 @@ export const membership_data = [
            certain voting privileges and may not serve on the board, but may
             participate in meetings and serve and vote on committees.`,
 		bullet_points: [
-			'Architects, engineers, private inspectors, and building professionals.',
-			'Become a Professional Member upon payment of membership dues.',
-			'Participation in meetings.',
-			'Participation, service, and voting rights on committees.',
+			'Licensed architects, professional engineers, expediters, general contractors, and other building and construction professionals.',
+			'Entitled to one voting right.',
+			'Board/Committee service as per By-Laws.',
 		],
 	},
 	{
@@ -56,7 +55,6 @@ export const membership_data = [
                 allowed voting privileges, but may participate in meetings and serve on committees.`,
 		bullet_points: [
 			'Organizations, associations, institutions, corporations, partnerships, manufacturers, and related entities.',
-			'Become an Associate Member upon payment of membership dues.',
 			'Participation in meetings.',
 			'Ability to serve on committees.',
 		],
@@ -68,8 +66,8 @@ export const membership_data = [
 		description: `Any former Active Individual Member who is retired from a governmental entity shall retain all rights and privileges of an Active Individual Member.`,
 		full_description: `Any former Active Individual Member who is retired from a governmental entity shall retain all rights and privileges of an Active Individual Member.`,
 		bullet_points: [
-			'Individuals retired from a governmental entity.',
-			'Retain all rights and privileges of an Active Individual Member.',
+			'Individuals retired from either government entity, D.C. Thrid Party, building and construction professional, or licensed professional (e.g. Architect or Engineer).',
+			'Retain all rights and privileges of an Active Individual or Professional Member.',
 		],
 	},
 ]
