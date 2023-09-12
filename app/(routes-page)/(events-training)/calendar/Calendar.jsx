@@ -3,6 +3,7 @@ import dayjs from 'dayjs'
 import advanceFormat from 'dayjs/plugin/advancedFormat'
 dayjs.extend(advanceFormat)
 
+import { IconEye } from '@/components/icons/svg-icons'
 import { Image as NextuiImage } from '@nextui-org/react'
 import { cn, getDifferenceTime } from '@/lib/utils'
 import { useEffect, useState } from 'react'
@@ -121,10 +122,11 @@ export function Calendar({ events }) {
 													</h1>
 												</div>
 												<ul className="flex flex-col gap-1">
-													{events.map((event) => {
+													{events.map((event, index) => {
 														return date
 															.format('MMMM Do, YYYY')
 															.includes(event.date) ? (
+															// && index < 2
 															<Dialog key={event._id}>
 																<TooltipProvider delayDuration={400}>
 																	<Tooltip>
@@ -141,8 +143,16 @@ export function Calendar({ events }) {
 																				</li>
 																			</DialogTrigger>
 																		</TooltipTrigger>
-																		<TooltipContent className="border border-white/20 bg-gray-950">
-																			<p className="text-xs">See Event</p>
+																		<TooltipContent
+																			side="bottom"
+																			align="center"
+																			className="bg-transparent rounded-lg flex gap-1 items-center shadow-none outline-none border-[0px]"
+																		>
+																			<IconEye
+																				className="text-white inline-flex"
+																				width={16}
+																				height={16}
+																			/>
 																		</TooltipContent>
 																	</Tooltip>
 																</TooltipProvider>
