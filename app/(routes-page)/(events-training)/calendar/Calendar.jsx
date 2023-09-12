@@ -3,7 +3,6 @@ import dayjs from 'dayjs'
 import advanceFormat from 'dayjs/plugin/advancedFormat'
 dayjs.extend(advanceFormat)
 
-import Image from 'next/image'
 import { Image as NextuiImage } from '@nextui-org/react'
 import { cn, getDifferenceTime } from '@/lib/utils'
 import { useEffect, useState } from 'react'
