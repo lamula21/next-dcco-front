@@ -16,7 +16,7 @@ export default async function CalendarPage() {
 				init_time: '10:00',
 				end_time: '18:50',
 				imageUrl: [
-					'https://res.cloudinary.com/lamula/image/upload/v1694390507/Screenshot_from_2023-09-10_17-47-24_td6kna.png',
+					'https://res.cloudinary.com/lamula/image/upload/v1694392980/image_xr0xcl.png',
 				],
 				address: 'Online',
 			},
@@ -37,11 +37,11 @@ export default async function CalendarPage() {
 				_id: 3,
 				title: 'This is a Mocked Up Title',
 				description: `Join us for a General Meeting where we'll discuss all things related to our community. This online event is open to everyone who wants to participate. It's a great opportunity to connect with like minded individuals and share ideas. Whether you're a long-time member or new to our community, we welcome your presence and input. Don't miss out on this chance to be part of the conversation. Grab your favorite beverage, find a cozy spot,and get ready to engage in livelydiscussions. We look forward to seeing you there!`,
-				date: 'September 1st, 2023',
+				date: 'September 11th, 2023',
 				init_time: '14:44',
 				end_time: '15:44',
 				imageUrl: [
-					'https://res.cloudinary.com/lamula/image/upload/v1694390507/Screenshot_from_2023-09-10_17-47-24_td6kna.png',
+					'https://res.cloudinary.com/lamula/image/upload/v1693205529/fu1tddhx5itpcawxkkwm.jpg',
 				],
 				address: 'Online',
 			},
