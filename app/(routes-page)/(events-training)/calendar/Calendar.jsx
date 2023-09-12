@@ -121,10 +121,10 @@ export function Calendar({ events }) {
 													</h1>
 												</div>
 												<ul className="flex flex-col gap-1">
-													{events.map((event, index) => {
+													{events.map((event) => {
 														return date
 															.format('MMMM Do, YYYY')
-															.includes(event.date) && index < 2 ? (
+															.includes(event.date) ? (
 															<Dialog key={event._id}>
 																<TooltipProvider delayDuration={400}>
 																	<Tooltip>
