@@ -96,7 +96,11 @@ export function Calendar({ events }) {
 											key={index}
 											className={cn(
 												'relative px-2 py-2 border border-[#363b3d] hover:bg-[#ffffff0a] cursor-pointer',
-												today ? 'border border-[#C07331]' : ''
+												today ? 'border border-[#C07331]' : '',
+												selectDate.toDate().toDateString() ===
+													date.toDate().toDateString()
+													? 'bg-[#ffffff0a]'
+													: ''
 											)}
 											onClick={() => {
 												setSelectDate(date)
@@ -122,11 +126,13 @@ export function Calendar({ events }) {
 													</h1>
 												</div>
 												<ul className="flex flex-col gap-1">
-													{events.map((event, index) => {
-														return date
-															.format('MMMM Do, YYYY')
-															.includes(event.date) ? (
-															// && index < 2
+													{events
+														.filter(
+															(event, index) =>
+																event.date === date.format('MMMM Do, YYYY') &&
+																index < 2
+														)
+														.map((event) => (
 															<Dialog key={event._id}>
 																<TooltipProvider delayDuration={400}>
 																	<Tooltip>
@@ -136,7 +142,7 @@ export function Calendar({ events }) {
 																					<h1 className="text-[#9E9589] text-clip overflow-hidden">
 																						<span className="inline-flex w-2 h-2 bg-yellow-700 rounded-full mr-1" />
 																						{event.init_time} - {event.end_time}{' '}
-																						<span className="ml-[2px] text-[#D6D3CD]">
+																						<span className="text-[#D6D3CD] line-clamp-2">
 																							{event.title}
 																						</span>
 																					</h1>
@@ -144,7 +150,7 @@ export function Calendar({ events }) {
 																			</DialogTrigger>
 																		</TooltipTrigger>
 																		<TooltipContent
-																			side="bottom"
+																			side="left"
 																			align="center"
 																			className="bg-transparent rounded-lg flex gap-1 items-center shadow-none outline-none border-[0px]"
 																		>
@@ -191,12 +197,7 @@ export function Calendar({ events }) {
 																			</span>
 
 																			<span className="text-base tracking-normal font-light my-4">
-																				{/* {event.subtitle} */}
-																				{`This is a mocked up SUBTITLE. Join
-																						us for the General Meeting, an
-																						online gathering where we'll discuss
-																						everything and anything in a casual
-																						and relaxed atmosphere.`}
+																				{event.subtitle}
 																			</span>
 																		</DialogTitle>
 
@@ -242,8 +243,7 @@ export function Calendar({ events }) {
 																	</DialogFooter>
 																</DialogContent>
 															</Dialog>
-														) : null
-													})}
+														))}
 												</ul>
 												{events.length - 3 > 0 ? (
 													<span className="px-2">{events.length - 3} more</span>
@@ -275,8 +275,11 @@ export function Calendar({ events }) {
 							{
 								// if there are events on the selected date, display them
 								// display only the first 3 events, and hide the rest. show how many events are hidden
-								events.map((event) => {
-									return event.date === selectDate.format('MMMM Do, YYYY') ? (
+								events
+									.filter(
+										(event) => event.date === selectDate.format('MMMM Do, YYYY')
+									)
+									.map((event) => (
 										<li
 											key={event._id}
 											className="p-4 flex flex-col gap-2 bg-gray-950 rounded-md text-xs text-[10px] font-semibold cursor-pointer"
@@ -287,8 +290,7 @@ export function Calendar({ events }) {
 											<p className="text-sm text-[#D6D3CD]">{event.title}</p>
 											<p className="text-sm text-[#D6D3CD]">{event.address}</p>
 										</li>
-									) : null
-								})
+									))
 							}
 						</ul>
 					)

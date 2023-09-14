@@ -142,4 +142,8 @@ base,
 			0 12.5px 10px #d3d3d309, 0 22.3px 17.9px #d3d3d30b,
 			0 41.8px 33.4px #d3d3d30d, 0 100px 80px #d3d3d312;
 	}
+
+	.bg-blue-gray-50 {
+		background-color: rgba(236, 239, 241, 0.5);
+	}
 }

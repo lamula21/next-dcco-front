@@ -18,7 +18,7 @@ export function IconEye({ className, width, height }) {
 			stroke="currentColor"
 			fill="none"
 			strokeLinecap="round"
-			stroke-linejoin="round"
+			strokeLinejoin="round"
 		>
 			<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 			<path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
