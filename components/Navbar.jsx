@@ -155,40 +155,40 @@ export function Navbar() {
 									</div>
 								</li>
 
-								<ListItem href="/calendar" title="Calendar">
-									See our calendar.
+								<ListItem href="/meetings" title="Meetings">
+									See our meetings.
 								</ListItem>
 
-								<ListItem href="/live-training" title="Live Training Events">
-									Check out our recent training events.
+								<ListItem href="/courses" title="eCourses">
+									Check out our new eCourses.
 								</ListItem>
 
-								<ListItem href="/dcco-events" title="DCCOA Events">
-									Follow our next events.
-								</ListItem>
-
-								<ListItem
-									href="/on-demand"
-									title="On-demand/Self-Paced Courses"
-								>
-									Read more about our courses.
+								<ListItem href="/building-safety" title="Building Safety Month">
+									Get ready. Our Building Safety Month is coming soon.
 								</ListItem>
 
 								<ListItem
-									href="https://www.iccsafe.org/professional-development/development"
-									title="ICC Events"
-									target="_blank"
+									href="/professional-development"
+									title="Professional Development"
 								>
-									Follow the International Code Council events
+									Read more about our professional development.
 								</ListItem>
 
-								<ListItem href="/career-training" title="Career Training">
+								<ListItem href="/winter-soiree" title="Winter Soiree">
+									Prepare for our Winter Soiree
+								</ListItem>
+
+								<ListItem href="/dccoa-training" title="DCCOA Training">
 									Get ready for our career training.
+								</ListItem>
+
+								<ListItem href="/code-beyond" title="D.C Code & Beyond Week">
+									Join us for our Code & Beyond Week.
 								</ListItem>
 
 								<ListItem
 									href="https://learn.iccsafe.org/ihtml/application/student/interface.icc2021/index.html"
-									title="ICC Code Training"
+									title="ICC Training"
 									className="col-start-2"
 									target="_blank"
 								>
@@ -202,15 +202,6 @@ export function Navbar() {
 									target="_blank"
 								>
 									Watch ICC recent live trainings.
-								</ListItem>
-
-								<ListItem
-									href="https://www.iccsafe.org/about/who-we-are/"
-									title="International"
-									className="col-start-2"
-									target="_blank"
-								>
-									Explore more about ICC.
 								</ListItem>
 							</ul>
 						</NavigationMenuContent>

@@ -1,4 +1,4 @@
-import SectionHeader from '@/app/(routes-page)/components/SectionHeader'
+import SectionHeader from '@/app/(link-pages)/components/SectionHeader'
 import Link from 'next/link'
 
 export default function SponsorshipPage() {

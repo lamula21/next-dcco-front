@@ -26,9 +26,13 @@
 	"include": [
 		"next-env.d.ts",
 		"**/*.ts",
+		"**/*.js",
 		"**/*.jsx",
 		"**/*.tsx",
-		".next/types/**/*.ts"
+		".next/types/**/*.ts",
+		"app/(link-pages)/(events-training)/meetings/loading.jsx",
+		"app/(landing-page)/page.js",
+		"app/(landing-page)/page.js"
 	],
 	"exclude": ["node_modules"]
 }

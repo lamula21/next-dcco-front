@@ -19,9 +19,7 @@ const fetchProductionData = async () => {
 }
 
 const fetchDevelopmentData = async () => {
-	const res = await fetch('http://localhost:3000/api/events', {
-		cache: 'no-cache',
-	})
+	const res = await fetch('http://localhost:3000/api/events')
 	const data = await res.json()
 	return data
 }

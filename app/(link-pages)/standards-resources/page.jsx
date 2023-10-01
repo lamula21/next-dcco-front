@@ -1,5 +1,11 @@
+import { CardLink } from '@/components/CardLink'
 import SectionHeader from '../components/SectionHeader'
 import AccordionStandard from './AccordionStandard'
+import CareerLogo from '@/public/logo-career.png'
+import StandardsLogo from '@/public/logo-code-standards.png'
+import GuideLogo from '@/public/logo-guide-tools.png'
+import MeetingsLogo from '@/public/logo-meetings.png'
+import PostLogo from '@/public/logo-posts.png'
 
 export default function StandardsPage() {
 	return (
@@ -39,6 +45,22 @@ export default function StandardsPage() {
 				</a>
 
 				<AccordionStandard />
+			</section>
+
+			<section className="container mb-24 flex flex-col gap-10">
+				<SectionHeader subtitle="STANDARDS & RESOURCES" title="Useful Links" />
+
+				<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5  text-center gap-5">
+					<CardLink href="/" src={CareerLogo} title="Career Development" />
+
+					<CardLink href="/" src={StandardsLogo} title="Code & Standards" />
+
+					<CardLink href="/" src={GuideLogo} title="Reference Guides & Tools" />
+
+					<CardLink href="/" src={MeetingsLogo} title="Meetings" />
+
+					<CardLink href="/" src={PostLogo} title="Posts" />
+				</div>
 			</section>
 		</main>
 	)

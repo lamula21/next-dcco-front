@@ -26,3 +26,11 @@ export function IconEye({ className, width, height }) {
 		</svg>
 	)
 }
+
+export function BreadcrumIcon({ className }) {
+	return (
+		<svg className={className} viewBox="0 0 20 20" fill="currentColor">
+			<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"></path>
+		</svg>
+	)
+}

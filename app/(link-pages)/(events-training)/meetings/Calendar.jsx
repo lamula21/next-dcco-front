@@ -6,7 +6,7 @@ dayjs.extend(advanceFormat)
 import { IconEye } from '@/components/icons/svg-icons'
 import { Image as NextuiImage } from '@nextui-org/react'
 import { cn, getDifferenceTime } from '@/lib/utils'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { generateDate, months, days } from '../components/calendar'
 
 import {
@@ -77,7 +77,7 @@ export function Calendar({ events }) {
 						{days.map((day, index) => {
 							return (
 								<h1
-									key={index}
+									key={`${index}-${day}`}
 									className="hidden h-14 border-t lg:grid place-content-center text-sm border border-[#363b3d]"
 								>
 									{day}
@@ -93,7 +93,7 @@ export function Calendar({ events }) {
 								({ date, currentMonth, today }, index) => {
 									return (
 										<div
-											key={index}
+											key={`${index}-${date}`}
 											className={cn(
 												'relative px-2 py-2 border border-[#363b3d] hover:bg-[#ffffff0a] cursor-pointer',
 												today ? 'border border-[#C07331]' : '',
@@ -134,8 +134,8 @@ export function Calendar({ events }) {
 														.map((event, index) => {
 															if (index < 2)
 																return (
-																	<>
-																		<Dialog key={event._id}>
+																	<React.Fragment key={event._id}>
+																		<Dialog>
 																			<TooltipProvider delayDuration={400}>
 																				<Tooltip>
 																					<TooltipTrigger>
@@ -243,7 +243,7 @@ export function Calendar({ events }) {
 																		{index < 1 ? (
 																			<span className="px-2">more events</span>
 																		) : null} */}
-																	</>
+																	</React.Fragment>
 																)
 														})}
 												</ul>
@@ -283,7 +283,7 @@ export function Calendar({ events }) {
 									)
 									.map((event) => (
 										<li
-											key={event._id}
+											key={`${event._id}-${event.title}`}
 											className="p-4 flex flex-col gap-2 bg-gray-950 rounded-md text-xs text-[10px] font-semibold cursor-pointer"
 										>
 											<h1 className=" text-base text-[#9E9589]">

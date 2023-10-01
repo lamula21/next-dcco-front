@@ -122,9 +122,9 @@ export default async function HomePage() {
 						</h2>
 						<Link
 							href="/about"
-							className="inline-flex items-center text-lg font-medium text-[#C07331]"
+							className="inline-flex items-center text-lg font-medium text-[#C07331] "
 						>
-							Learn more about us
+							<span className="hover:underline">Learn more about us</span>
 							<i className="bx bx-chevron-right text-2xl ml-1" />
 						</Link>
 					</div>
@@ -133,7 +133,7 @@ export default async function HomePage() {
 						<div className="flex flex-col w-full md:w-1/3 p-4 gap-4 shrink-0">
 							<Link
 								className="relative group overflow-hidden rounded-lg"
-								href="/"
+								href="/courses"
 							>
 								<img
 									src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-content-3.png"
@@ -154,7 +154,7 @@ export default async function HomePage() {
 						<div className="flex flex-col w-full md:w-1/3 p-4 gap-4 shrink-0">
 							<Link
 								className="relative group overflow-hidden rounded-lg"
-								href="/"
+								href="/calendar"
 							>
 								<img
 									src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-content-2.png"
