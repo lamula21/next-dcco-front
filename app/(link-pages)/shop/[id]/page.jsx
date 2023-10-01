@@ -73,10 +73,10 @@ export default async function ProductPage({ params: { id } }) {
 								</span>
 								<div className="h-full w-full flex items-center">
 									<div
-										className={cn(
-											'w-5 h-5 rounded-full',
-											`bg-[${product.color}]`
-										)}
+										className="w-5 h-5 rounded-full"
+										style={{
+											backgroundColor: product.color,
+										}}
 									></div>
 								</div>
 							</div>
