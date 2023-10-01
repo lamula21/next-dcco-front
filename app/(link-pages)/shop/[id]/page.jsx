@@ -17,13 +17,16 @@ export default async function ProductPage({ params: { id } }) {
 					<div className="lg:self-end lg:max-w-[32rem]">
 						<nav className="">
 							<div className="text-sm flex items-center gap-2">
-								<Link href="/shop" className="text-indigo-500/80">
+								<Link
+									href="/shop"
+									className="text-indigo-500/90 hover:underline"
+								>
 									<span className="t">Products</span>
 								</Link>
 
 								<BreadcrumIcon className="w-4 h-4 text-white/30" />
 
-								<p className="text-indigo-500/80">{product.category}</p>
+								<p className="text-indigo-500/90">{product.category}</p>
 							</div>
 						</nav>
 
@@ -86,7 +89,7 @@ export default async function ProductPage({ params: { id } }) {
 							<a
 								href="#"
 								className={cn(
-									'flex w-full items-center justify-center rounded-md border border-white/0 bg-[#C07331] py-3 text-base font-medium text-white'
+									'flex w-full items-center justify-center rounded-md border border-white/0 bg-white py-3 text-base font-medium text-black hover:bg-white/90'
 								)}
 							>
 								Pay ${product.price}

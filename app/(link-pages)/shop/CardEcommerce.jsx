@@ -12,11 +12,13 @@ export function CardEcommerce({ id, title, description, image, price }) {
 	return (
 		<Card className="group relative bg-[#181a1b] rounded-xl aspect-square md:max-w-[24rem]">
 			<CardHeader className="aspect-square md:h-full rounded-xl md:w-full overflow-hidden group-hover:opacity-75 transition-opacity">
-				<img
-					src={image}
-					alt={`A description of this item: ${title}`}
-					className="w-full h-full rounded-xl object-cover"
-				/>
+				<Link href={`/shop/${id}`}>
+					<img
+						src={image}
+						alt={`A description of this item: ${title}`}
+						className="w-full h-full rounded-xl object-cover object-center"
+					/>
+				</Link>
 			</CardHeader>
 
 			<CardContent className="mt-4 flex justify-between">

@@ -12,11 +12,13 @@ export function CardEcommerceFeature({ id, title, description, image, price }) {
 	return (
 		<Card className="group relative bg-[#181a1b] rounded-xl w-full h-full flex flex-col md:flex-row ">
 			<CardHeader className="md:h-full rounded-xl md:w-2/3 overflow-hidden group-hover:opacity-75 transition-opacity">
-				<img
-					src={image}
-					alt={`A description of this item: ${title}`}
-					className="w-full h-full rounded-xl object-cover object-center"
-				/>
+				<Link href={`/shop/${id}`}>
+					<img
+						src={image}
+						alt={`A description of this item: ${title}`}
+						className="w-full h-full rounded-xl object-cover object-center"
+					/>
+				</Link>
 			</CardHeader>
 
 			<div className="flex flex-col md:w-1/3 justify-between md:py-6">
