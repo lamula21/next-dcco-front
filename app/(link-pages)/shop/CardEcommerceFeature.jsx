@@ -1,10 +1,11 @@
 'use client'
-import { Check, Loader2 } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
+import { useState } from 'react'
+import Link from 'next/link'
 
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
-import { useState } from 'react'
 import { cn } from '@/lib/utils'
-import Link from 'next/link'
+import { CreditIcon } from '@/components/icons/svg-icons'
 
 export function CardEcommerceFeature({ id, title, description, image, price }) {
 	const [loading, setloading] = useState(false)
@@ -53,7 +54,7 @@ export function CardEcommerceFeature({ id, title, description, image, price }) {
 						onClick={() => setloading(true)}
 					>
 						{loading && <Loader2 className="animate-spin mr-2 h-4 w-4" />}
-						{!loading && <Check className="mr-2 h-4 w-4" />}
+						{!loading && <CreditIcon className="w-5 h-5 mr-2" />}
 						Checkout
 					</a>
 				</CardFooter>

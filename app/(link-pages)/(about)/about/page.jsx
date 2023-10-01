@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import MissionCard from '../components/MissionCard'
 import { Contact } from '@/components/Contact'
-import SectionHeader from '../../components/SectionHeader'
+import SectionHeader from '../../../../components/SectionHeader'
 
 export default function AboutPage() {
 	return (

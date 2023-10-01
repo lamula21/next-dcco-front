@@ -5,18 +5,19 @@ import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
+import { CreditIcon } from '@/components/icons/svg-icons'
 
 export function CardEcommerce({ id, title, description, image, price }) {
 	const [loading, setloading] = useState(false)
 
 	return (
 		<Card className="group relative bg-[#181a1b] rounded-xl aspect-square md:max-w-[24rem]">
-			<CardHeader className="aspect-square md:h-full rounded-xl md:w-full overflow-hidden group-hover:opacity-75 transition-opacity">
+			<CardHeader className="aspect-[4/3] rounded-xl  overflow-hidden group-hover:opacity-75 transition-opacity ">
 				<Link href={`/shop/${id}`}>
 					<img
 						src={image}
 						alt={`A description of this item: ${title}`}
-						className="w-full h-full rounded-xl object-cover object-center"
+						className="aspect-[4/3] w-full h-full rounded-xl object-cover object-center"
 					/>
 				</Link>
 			</CardHeader>
@@ -51,7 +52,7 @@ export function CardEcommerce({ id, title, description, image, price }) {
 					onClick={() => setloading(true)}
 				>
 					{loading && <Loader2 className="animate-spin mr-2 h-4 w-4" />}
-					{!loading && <Check className="mr-2 h-4 w-4" />}
+					{!loading && <CreditIcon className="w-5 h-5 mr-2" />}
 					Checkout
 				</a>
 			</CardFooter>

@@ -1,9 +1,10 @@
-import { BreadcrumIcon } from '@/components/icons/svg-icons'
-import { cn } from '@/lib/utils'
-import { getProductById } from '@/services/getProductById'
 import { BadgeCheck } from 'lucide-react'
-import SectionHeader from '../../components/SectionHeader'
 import Link from 'next/link'
+
+import { BreadcrumIcon } from '@/components/icons/svg-icons'
+import { getProductById } from '@/services/getProductById'
+import SectionHeader from '@/components/SectionHeader'
+import { CheckoutButton } from '@/components/CheckoutButton'
 
 export default async function ProductPage({ params: { id } }) {
 	const product = await getProductById(id)
@@ -36,7 +37,7 @@ export default async function ProductPage({ params: { id } }) {
 							</h1>
 						</div>
 						<section aria-labelledby="information-heading" className="lh">
-							<p className="text-lg text-white/90 sm:text-xl mt-4">
+							<p className="text-lg text-white sm:text-xl mt-4">
 								${product.price}
 							</p>
 							<div className="mt-4">
@@ -86,14 +87,7 @@ export default async function ProductPage({ params: { id } }) {
 						</div>
 
 						<div className="mt-6">
-							<a
-								href="#"
-								className={cn(
-									'flex w-full items-center justify-center rounded-md border border-white/0 bg-white py-3 text-base font-medium text-black hover:bg-white/90'
-								)}
-							>
-								Pay ${product.price}
-							</a>
+							<CheckoutButton price={product.price} />
 						</div>
 					</div>
 				</div>

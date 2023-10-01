@@ -6,7 +6,7 @@ import EcoursesLogo from '@/public/logo-ecourses.png'
 import { fetchCalendar } from '@/services/fetchCalendar'
 import { Calendar } from './Calendar'
 import { CardLink } from '@/components/CardLink'
-import SectionHeader from '../../components/SectionHeader'
+import SectionHeader from '../../../../components/SectionHeader'
 
 export default async function CalendarPage() {
 	const events = await fetchCalendar()

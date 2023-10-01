@@ -1,5 +1,5 @@
 import { getProducts } from '@/services/getProducts'
-import SectionHeader from '../components/SectionHeader'
+import SectionHeader from '@/components/SectionHeader'
 import { CardEcommerceFeature } from './CardEcommerceFeature'
 import { CardEcommerce } from './CardEcommerce'
 

@@ -1,5 +1,5 @@
 import { CardLink } from '@/components/CardLink'
-import SectionHeader from '../components/SectionHeader'
+import SectionHeader from '../../../components/SectionHeader'
 import AccordionStandard from './AccordionStandard'
 import CareerLogo from '@/public/logo-career.png'
 import StandardsLogo from '@/public/logo-code-standards.png'

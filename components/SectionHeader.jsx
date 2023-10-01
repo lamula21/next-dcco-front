@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function SectionHeader({ subtitle, title, description }) {
 	return (
 		<div className="text-left lg:text-center">

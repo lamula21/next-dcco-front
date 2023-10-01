@@ -1,4 +1,4 @@
-import SectionHeader from '../../../components/SectionHeader'
+import SectionHeader from '../../../../../components/SectionHeader'
 import { MembershipCard } from '../../components/MembershipCard'
 import { membership_data } from '../../components/membership-data'
 
