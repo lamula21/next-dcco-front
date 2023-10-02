@@ -6,7 +6,7 @@ export function ToastProvider({ children }) {
 	return (
 		<>
 			{children}
-			<Toaster position="bottom-center" />
+			<Toaster position="top-center" />
 		</>
 	)
 }

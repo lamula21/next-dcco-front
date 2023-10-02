@@ -12,8 +12,12 @@ async function postNewsletter() {
 
 export default function NewsletterForm() {
 	async function handleSubmit(e) {
-		//console.log(e.target.email.value)
 		e.preventDefault()
+
+		const formData = new FormData(e.currentTarget)
+
+		const name = formData.get('name')
+		const email = formData.get('email')
 
 		// render sonner promise message
 		toast.promise(postNewsletter, {

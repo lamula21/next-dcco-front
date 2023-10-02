@@ -29,10 +29,7 @@
 		"**/*.js",
 		"**/*.jsx",
 		"**/*.tsx",
-		".next/types/**/*.ts",
-		"app/(link-pages)/(events-training)/meetings/loading.jsx",
-		"app/(landing-page)/page.js",
-		"app/(landing-page)/page.js"
+		".next/types/**/*.ts"
 	],
 	"exclude": ["node_modules"]
 }

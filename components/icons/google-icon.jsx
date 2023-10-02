@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function GoogleIcon({ ...props }) {
 	return (
-		<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" {...props}>
+		<svg viewBox="0 0 600 600" {...props}>
 			<path
 				d="M533.5 278.4c0-18.5-1.5-37.1-4.7-55.3H272.1v104.8h147c-6.1 33.8-25.7 63.7-54.4 82.7v68h87.7c51.5-47.4 81.1-117.4 81.1-200.2z"
 				fill="#4285f4"
@@ -22,3 +22,20 @@ export default function GoogleIcon({ ...props }) {
 		</svg>
 	)
 }
+
+export const GoogleIconSVG = ({...props}) => (
+	<svg
+		aria-hidden="true"
+		focusable="false"
+		data-prefix="fab"
+		data-icon="discord"
+		role="img"
+		viewBox="0 0 488 512"
+		{...props}
+	>
+		<path
+			fill="currentColor"
+			d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+		></path>
+	</svg>
+)

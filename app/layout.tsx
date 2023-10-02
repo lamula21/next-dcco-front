@@ -31,7 +31,6 @@ export default function RootLayout({
 				<Providers>
 					<ToastProvider>{children}</ToastProvider>
 				</Providers>
-				<Footer />
 				<TailwindIndicator />
 			</body>
 		</html>
