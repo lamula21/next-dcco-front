@@ -46,6 +46,7 @@ export function LogInForm() {
 				password: data.password,
 				redirect: false,
 			})
+
 			//e.g signInResult = { error: 'User not found', status: 200, ok: true, url: null }
 
 			if (signInResult?.error) {
