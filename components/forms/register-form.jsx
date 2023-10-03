@@ -45,6 +45,8 @@ export function RegisterForm() {
 			}),
 		})
 
+		console.log(signUpResponse)
+
 		const json = await signUpResponse.json()
 
 		if (signUpResponse.status == 400) {
