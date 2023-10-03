@@ -25,13 +25,13 @@ export function OAuthLogInButton() {
 			// everythin ok redirect to dashboard
 			return router.push('/dashboard')
 		} catch (error) {
-			setIsLoading(false)
-
 			const unknownError = 'Something went wrong, please try again.'
 
 			if (error instanceof Error) {
 				return toast.error(error.message || unknownError)
 			}
+		} finally {
+			setIsLoading(false)
 		}
 	}
 

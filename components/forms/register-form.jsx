@@ -3,10 +3,10 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import { useEffect, useState, useTransition } from 'react'
-import { signIn } from 'next-auth/react'
 
 import { authSchema } from '@/lib/validations/auth'
 import { Button } from '@/components/ui/button'
+import { getAPIBasePath } from '@/lib/basePath'
 import {
 	Form,
 	FormControl,
@@ -33,11 +33,13 @@ export function RegisterForm() {
 		},
 	})
 
+	// useTransition allows to defer state updates
+	// until after the next paint.
 	const onSubmit = async (data) => {
-		// data = { email: string , password: string }
-
 		startTransition(async () => {
-			const signUpResponse = await fetch(`http://localhost:3000/api/users`, {
+			const basePath = getAPIBasePath()
+
+			const signUpResponse = await fetch(`${basePath}/api/users`, {
 				method: 'POST',
 				body: JSON.stringify({
 					email: data.email,

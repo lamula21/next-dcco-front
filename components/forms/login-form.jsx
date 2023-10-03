@@ -18,14 +18,11 @@ import { Input } from '@/components/ui/input'
 import { Loader2 } from 'lucide-react'
 import { PasswordInput } from '@/components/PasswordInput'
 import { useRouter } from 'next/navigation'
-import { set } from 'mongoose'
 
 export function LogInForm() {
 	const router = useRouter()
 	const [mounted, setMounted] = useState(false)
 	const [loading, setLoading] = useState(false)
-
-	// This is for the loading spinner
 
 	// react-hook-form
 	const form = useForm({
@@ -36,20 +33,19 @@ export function LogInForm() {
 		},
 	})
 
+	// Without useTransition. Look up register-form.jsx
 	const onSubmit = async (data) => {
-		// data = { email: string , password: string }
 		try {
 			setLoading(true)
 
+			//e.g signInResult = { error: 'User not found', status: 200, ok: true, url: null }
 			const signInResult = await signIn('credentials', {
 				email: data.email.toLowerCase(),
 				password: data.password,
 				redirect: false,
 			})
 
-			console.log(JSON.stringify(signInResult, null, 2))
-
-			//e.g signInResult = { error: 'User not found', status: 200, ok: true, url: null }
+			// console.log(JSON.stringify(signInResult, null, 2))
 
 			if (signInResult?.error) {
 				throw new Error(`The email or password you've entered is incorrect.`)
