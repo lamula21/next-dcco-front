@@ -45,8 +45,6 @@ export function LogInForm() {
 				redirect: false,
 			})
 
-			console.log(JSON.stringify(signInResult, null, 2))
-
 			if (signInResult?.error) {
 				throw new Error(`The email or password you've entered is incorrect.`)
 			}
