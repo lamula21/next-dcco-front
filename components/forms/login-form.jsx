@@ -47,6 +47,8 @@ export function LogInForm() {
 				redirect: false,
 			})
 
+			console.log(JSON.stringify(signInResult, null, 2))
+
 			//e.g signInResult = { error: 'User not found', status: 200, ok: true, url: null }
 
 			if (signInResult?.error) {
