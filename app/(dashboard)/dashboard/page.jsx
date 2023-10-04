@@ -15,7 +15,7 @@ export default async function DashboardPage() {
 		<DashboardShell>
 			<DashboardHeader
 				heading="Dashboard"
-				text={`Welcome back ${user.name} 👋`}
+				text={`Welcome back! ${user.name}.`}
 			/>
 
 			<div></div>

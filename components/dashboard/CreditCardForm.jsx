@@ -82,7 +82,7 @@ export function CreditCardForm({ user, className, ...props }) {
 					<CardTitle>Payment Information</CardTitle>
 					<CardDescription>
 						We store your credit card information securely to make smoother
-						transaction convenient as possible and facilitate refund process.
+						transactions as possible and facilitate refund process.
 					</CardDescription>
 				</CardHeader>
 				<CardContent className="flex flex-col gap-5">
