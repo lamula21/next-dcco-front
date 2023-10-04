@@ -28,9 +28,10 @@ export default async function SettingsPage() {
 				text="Manage account and website settings."
 			/>
 			<div className="grid gap-10">
-				<NameForm user={{ id: user.id, name: user.name || '' }} />
-
-				<PasswordForm user={user} />
+				<div className="grid grid-cols-2 gap-5">
+					<NameForm user={{ id: user.id, name: user.name || '' }} />
+					<PasswordForm user={user} />
+				</div>
 
 				<div className="grid grid-cols-2 gap-5">
 					<TitleForm user={user} />

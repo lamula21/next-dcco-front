@@ -79,8 +79,6 @@ export function PasswordForm({ user, className, ...props }) {
 					<CardTitle>Update Password</CardTitle>
 					<CardDescription>
 						Please enter a new strong password to safely secure your data.
-						Password must contain at least 8 characters, one uppercase, one
-						lowercase, one number and one special character.
 					</CardDescription>
 				</CardHeader>
 				<CardContent>
@@ -122,7 +120,7 @@ export function PasswordForm({ user, className, ...props }) {
 					</div>
 				</CardContent>
 
-				<CardFooter>
+				<CardFooter className="flex gap-3 ">
 					<button
 						type="submit"
 						className={cn(buttonVariants())}
