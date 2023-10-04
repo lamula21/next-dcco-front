@@ -75,7 +75,12 @@ export function TitleForm({ user, className, ...props }) {
 		>
 			<Card className="h-full flex flex-col justify-between">
 				<CardHeader>
-					<CardTitle>Your Title</CardTitle>
+					<div className="flex gap-2">
+						<CardTitle>Your Title</CardTitle>
+						<p className="px-1 text-xs text-red-600">
+							* Needed for becoming a member
+						</p>
+					</div>
 					<CardDescription>Enter your current title.</CardDescription>
 				</CardHeader>
 				<div className="flex flex-col">

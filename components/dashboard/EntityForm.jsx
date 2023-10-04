@@ -75,7 +75,12 @@ export function EntityForm({ user, className, ...props }) {
 		>
 			<Card>
 				<CardHeader>
-					<CardTitle>Your Organization</CardTitle>
+					<div className="flex gap-2">
+						<CardTitle>Your Organization</CardTitle>
+						<p className="px-1 text-xs text-red-600 ">
+							* Needed for becoming a member/sponsor
+						</p>
+					</div>
 					<CardDescription>
 						Enter the name of government, firm, or organization you are
 						affiliated with.

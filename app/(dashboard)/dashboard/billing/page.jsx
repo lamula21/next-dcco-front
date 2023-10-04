@@ -40,7 +40,7 @@ export default async function BillingPage() {
 		<DashboardShell>
 			<DashboardHeader
 				heading="Billing"
-				text="Manage billing and your subscription plan."
+				text="Manage your subscription plan."
 			/>
 
 			<div className="grid gap-8">

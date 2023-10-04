@@ -25,7 +25,7 @@ export default async function SettingsPage() {
 		<DashboardShell>
 			<DashboardHeader
 				heading="Settings"
-				text="Manage account and website settings."
+				text="Manage account and billing information."
 			/>
 			<div className="grid gap-10">
 				<div className="grid grid-cols-2 gap-5">
