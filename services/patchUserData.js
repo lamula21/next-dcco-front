@@ -16,8 +16,7 @@ const patchProductionUserData = async (dataToUpdate) => {
 			method: 'PATCH',
 			body: JSON.stringify(dataToUpdate),
 		})
-		const data = await res.json()
-		return data
+		return res
 	} catch (error) {
 		throw new Error(error.message)
 	}
