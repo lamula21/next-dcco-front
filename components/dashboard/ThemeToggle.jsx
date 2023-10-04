@@ -8,7 +8,7 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { Laptop, Moon, Sun } from 'lucide-react'
+import { GemIcon, Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 export function ThemeToggle() {
@@ -37,17 +37,18 @@ export function ThemeToggle() {
 				</Button>
 			</DropdownMenuTrigger>
 			<DropdownMenuContent align="end">
+				<DropdownMenuItem onClick={() => setTheme('dashboard')}>
+					<GemIcon className="mr-2 h-4 w-4" />
+					<span>Prime</span>
+				</DropdownMenuItem>
+
 				<DropdownMenuItem onClick={() => setTheme('light')} disabled>
 					<Sun className="mr-2 h-4 w-4" />
 					<span>Light</span>
 				</DropdownMenuItem>
-				<DropdownMenuItem onClick={() => setTheme('dark')}>
+				<DropdownMenuItem onClick={() => setTheme('dark')} disabled>
 					<Moon className="mr-2 h-4 w-4" />
 					<span>Dark</span>
-				</DropdownMenuItem>
-				<DropdownMenuItem onClick={() => setTheme('system')} disabled>
-					<Laptop className="mr-2 h-4 w-4" />
-					<span>System</span>
 				</DropdownMenuItem>
 			</DropdownMenuContent>
 		</DropdownMenu>
