@@ -1,14 +1,6 @@
 'use client'
+import { postNewSubscriber } from '@/services/postSubscriber'
 import { toast } from 'sonner'
-
-async function postNewsletter() {
-	const res = await fetch(
-		'http://localhost:3000/api/products'
-		//, {method: 'POST',}
-	)
-
-	return await res.json()
-}
 
 export default function NewsletterForm() {
 	async function handleSubmit(e) {
@@ -16,16 +8,21 @@ export default function NewsletterForm() {
 
 		const formData = new FormData(e.currentTarget)
 
-		const name = formData.get('name')
-		const email = formData.get('email')
+		const data = {
+			fullname: formData.get('fullname'),
+			email: formData.get('email'),
+		}
 
 		// render sonner promise message
-		toast.promise(postNewsletter, {
+		toast.promise(() => postNewSubscriber(data), {
 			loading: 'Subscribing to newsletter...',
 			success: (data) => {
-				return 'Congrats! You are now subscribed.'
+				if (data?.message) {
+					throw new Error(data.message)
+				}
+				return `Congrats ${data.fullname || ''}! You are now subscribed.`
 			},
-			error: 'Oops, something went wrong.',
+			error: "We're sorry. You are already subscribed.",
 		})
 	}
 
@@ -39,7 +36,7 @@ export default function NewsletterForm() {
 			</label>
 			<input
 				id="name"
-				name="name"
+				name="fullname"
 				type="text"
 				autoComplete="name"
 				required

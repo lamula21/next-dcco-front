@@ -17,6 +17,7 @@ const PasswordInput = forwardRef(({ className, ...props }, ref) => {
 				ref={ref}
 				{...props}
 			/>
+
 			<Button
 				type="button"
 				variant="ghost"

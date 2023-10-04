@@ -19,12 +19,23 @@ import {
 import { Separator } from '@/components/ui/separator'
 import { ListItem } from '@/components/ListItem'
 import Image from 'next/image'
+import { useTheme } from 'next-themes'
+import { getSession } from 'next-auth/react'
 
 export function Navbar() {
 	const [mounted, setMounted] = useState(false)
+	const { theme, setTheme } = useTheme()
+	const [currentSession, setcurrentSession] = useState(null)
+
+	if (theme === 'dashboard') setTheme('dark')
 
 	useEffect(() => {
-		setMounted(true)
+		async function getSessionData() {
+			const session = await getSession()
+			setMounted(true)
+			setcurrentSession(session)
+		}
+		getSessionData()
 	}, [])
 
 	if (mounted === false) {
@@ -248,16 +259,29 @@ export function Navbar() {
 					</NavigationMenuItem>
 
 					<NavigationMenuItem>
-						<Link href="/login" legacyBehavior passHref>
-							<NavigationMenuLink
-								className={cn(
-									navigationMenuTriggerStyle(),
-									'text-[#CCCCCC] text-sm font-semibold tracking-wide bg-transparent uppercase'
-								)}
-							>
-								Log In
-							</NavigationMenuLink>
-						</Link>
+						{currentSession ? (
+							<Link href="/dashboard" legacyBehavior passHref>
+								<NavigationMenuLink
+									className={cn(
+										navigationMenuTriggerStyle(),
+										'text-[#CCCCCC] text-sm font-semibold tracking-wide bg-transparent uppercase'
+									)}
+								>
+									Account
+								</NavigationMenuLink>
+							</Link>
+						) : (
+							<Link href="/login" legacyBehavior passHref>
+								<NavigationMenuLink
+									className={cn(
+										navigationMenuTriggerStyle(),
+										'text-[#CCCCCC] text-sm font-semibold tracking-wide bg-transparent uppercase'
+									)}
+								>
+									Log In
+								</NavigationMenuLink>
+							</Link>
+						)}
 					</NavigationMenuItem>
 				</NavigationMenuList>
 			</NavigationMenu>
