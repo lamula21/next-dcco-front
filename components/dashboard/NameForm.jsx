@@ -52,21 +52,26 @@ export function NameForm({ user, className, ...props }) {
 			name: data.name,
 		}
 
-		const response = await patchUserData(dataToUpdate)
+		try {
+			const response = await patchUserData(dataToUpdate)
 
-		console.log(response)
+			setLoading(false)
 
-		setLoading(false)
+			if (!response?.ok) {
+				return toast.error('Something went wrong.', {
+					description: 'Your name was not updated. Please try again.',
+				})
+			}
 
-		if (!response?.ok) {
-			return toast.error('Something went wrong.', {
+			toast.success('Your name has been updated.')
+		} catch (error) {
+			setLoading(false)
+			toast.error('Error on the server.', {
 				description: 'Your name was not updated. Please try again.',
 			})
+		} finally {
+			refreshData()
 		}
-
-		toast.success('Your name has been updated.')
-
-		refreshData()
 	}
 
 	return (
@@ -90,7 +95,7 @@ export function NameForm({ user, className, ...props }) {
 						</Label>
 						<Input
 							id="name"
-							className="w-[400px]"
+							className="w-full"
 							size={32}
 							{...register('name')}
 						/>

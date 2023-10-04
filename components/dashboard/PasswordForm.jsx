@@ -89,8 +89,9 @@ export function PasswordForm({ user, className, ...props }) {
 							</Label>
 							<Input
 								id="password"
+								placeholder="********"
 								type={showPassword ? 'text' : 'password'}
-								className="w-[400px]"
+								className="w-full"
 								size={32}
 								{...register('password')}
 							/>
@@ -98,7 +99,7 @@ export function PasswordForm({ user, className, ...props }) {
 								type="button"
 								variant="ghost"
 								size="sm"
-								className="absolute left-[350px] top-0 h-full px-3 py-2 hover:bg-transparent"
+								className="absolute right-[6px] top-0 h-full px-3 py-2 hover:bg-transparent"
 								onClick={() => setShowPassword((prev) => !prev)}
 							>
 								{showPassword ? (

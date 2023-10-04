@@ -11,15 +11,16 @@ export async function patchUserData(dataToUpdate) {
 }
 
 const patchProductionUserData = async (dataToUpdate) => {
-	const res = await fetch('https://dccoadmin.vercel.app/api/users', {
-		method: 'PATCH',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify(dataToUpdate),
-	})
-	const data = await res.json()
-	return data
+	try {
+		const res = await fetch('https://dccoadmin.vercel.app/api/users', {
+			method: 'PATCH',
+			body: JSON.stringify(dataToUpdate),
+		})
+		const data = await res.json()
+		return data
+	} catch (error) {
+		throw new Error(error.message)
+	}
 }
 
 const patchDevelopmentUserData = async (dataToUpdate) => {
