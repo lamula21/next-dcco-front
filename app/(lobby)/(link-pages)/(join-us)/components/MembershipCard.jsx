@@ -11,7 +11,7 @@ export function MembershipCard({ price, title, bullet_points, key }) {
 					<span className="font-bold text-4xl tracking-tight text-[#D6D3CD]">
 						${price}
 					</span>
-					<span className="font-semibold text-sm text-[#B1AAA0]">/hour</span>
+					<span className="font-semibold text-sm text-[#B1AAA0]">/month</span>
 				</p>
 
 				<ul className="text-sm list-disc grow">

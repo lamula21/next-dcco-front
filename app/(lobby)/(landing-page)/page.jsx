@@ -60,7 +60,7 @@ export default async function HomePage() {
 						<div className="flex justify-center">
 							<p className="text-lg md:max-w-3xl font-light mb-8 md:text-xl text-white">
 								Our non-profit organization offers in advancements in continuing
-								education, workshops, and seimnars/webinars to boost careers,
+								education, workshops, and seminars/webinars to boost careers,
 								promote jobs, and develop skills in building design and
 								construction in code regulations.
 							</p>
@@ -72,7 +72,7 @@ export default async function HomePage() {
 							Read More
 						</a>
 						<Link
-							href="/membership"
+							href="/join-us"
 							className="inline-flex items-center py-3 px-5 font-medium bg-transparent rounded-md border border-[#C07331] ml-4 cursor-pointer hover:bg-[#C07331]"
 						>
 							Join Us
@@ -144,7 +144,7 @@ export default async function HomePage() {
 								</p>
 							</Link>
 
-							<h3 className="text-xl font-bold">Discover our new Ecourses.</h3>
+							<h3 className="text-xl font-bold">Discover our new E-courses.</h3>
 							<p className="text-[#D6D3CD]">
 								Gain valuable knowledge and skills from our newly introduced
 								online courses. Start your learning journey today!
@@ -154,7 +154,7 @@ export default async function HomePage() {
 						<div className="flex flex-col w-full md:w-1/3 p-4 gap-4 shrink-0">
 							<Link
 								className="relative group overflow-hidden rounded-lg"
-								href="/calendar"
+								href="/meetings"
 							>
 								<img
 									src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-content-2.png"
@@ -166,7 +166,7 @@ export default async function HomePage() {
 							</Link>
 
 							<h3 className="text-xl font-bold">
-								Take a look at our renew calendar.
+								Take a look at our renewed calendar.
 							</h3>
 							<p className="text-[#D6D3CD]">
 								Stay informed and plan ahead with our renewed calendar!
@@ -176,7 +176,7 @@ export default async function HomePage() {
 						<div className="flex flex-col w-full md:w-1/3 p-4 gap-4 shrink-0">
 							<Link
 								className="relative group overflow-hidden rounded-lg"
-								href="/"
+								href="/join-us"
 							>
 								<img
 									src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-content-1.png"

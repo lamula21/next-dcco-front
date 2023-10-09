@@ -1,0 +1,1 @@
+const SPONSORSHIP_TYPE = {}

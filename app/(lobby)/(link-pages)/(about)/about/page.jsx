@@ -103,37 +103,31 @@ export default function AboutPage() {
 						<MissionCard
 							title="Promote Safety"
 							description="Enhance safety by educating those overseeing Washington, D.C. Construction Codes, including broader International Construction Codes development."
-							href=""
 							iconStyle="bx bx-health"
 						/>
 						<MissionCard
 							title="Promote the protection of life"
 							description="Promote safety for life and property, and ensure code consistency through collaboration with D.C. area development, building, and inspection departments."
-							href=""
 							iconStyle="bx bxs-check-shield"
 						/>
 						<MissionCard
 							title="Foster a better public understanding"
 							description="Strenghten public awareness for the proper administration of development and building codes for the wellbeing, welfare, and prosperity of municipalities and counties."
-							href=""
 							iconStyle="bx bxs-book-reader"
 						/>
 						<MissionCard
 							title="Improve the professionalism"
 							description="Elevate the professionalism of Building and Code Enforcement Officials by upholding high standards in code administration and development through ongoing education and training."
-							href=""
 							iconStyle="bx bxs-briefcase-alt-2"
 						/>
 						<MissionCard
 							title="Promote uniform interpretion and enforcement"
 							description="Ensure consistent code interpretations through meetings with government officials focused on development and building codes, facilitating idea exchange and issue resolution."
-							href=""
 							iconStyle="bx bxs-book-open"
 						/>
 						<MissionCard
 							title="Develop courses of instruction"
 							description="Create courses alone or with educational partners to ensure consistent understanding, enforcement, and administration of development, building codes, and related ordinances."
-							href=""
 							iconStyle="bx bxs-edit-alt"
 						/>
 					</div>

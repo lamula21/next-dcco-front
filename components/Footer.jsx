@@ -32,21 +32,24 @@ export function Footer() {
 
 				<div className="footer-content">
 					<h4 className="mb-3 text-xl font-bold">Quick Links</h4>
-					<FooterLink href="#" title="Home" />
-					<FooterLink href="#" title="About" />
-					<FooterLink href="#" title="Join Us" />
-					<FooterLink href="#" title="ICC" />
-					<FooterLink href="#" title="Region VII" />
+					<FooterLink href="/" title="Home" />
+					<FooterLink href="/about" title="About" />
+					<FooterLink href="/join-us" title="Join Us" />
+					<FooterLink
+						href="https://learn.iccsafe.org/ihtml/application/student/interface.icc2021/index.html"
+						title="ICC"
+					/>
+					<FooterLink href="http://iccregionvii.org/" title="Region VII" />
 				</div>
 
 				<div className="footer-content">
 					<h4 className="mb-3 text-xl font-bold">Company</h4>
 
-					<FooterLink href="#" title="Careers" />
-					<FooterLink href="#" title="Events" />
-					<FooterLink href="#" title="Locations" />
-					<FooterLink href="#" title="Developers" />
-					<FooterLink href="#" title="Privacy Policy" />
+					<FooterLink href="/careers" title="Careers" />
+					<FooterLink href="/meetings" title="Events" />
+					<FooterLink href="/contact" title="Locations" />
+					<FooterLink href="/developers" title="Developers" />
+					<FooterLink href="/" title="Privacy Policy" />
 				</div>
 
 				<div className="footer-content">

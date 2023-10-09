@@ -16,15 +16,7 @@ export default function MissionCard({ iconStyle, title, description, href }) {
 					<p className="leading-relaxed mb-3 text-center text-[#B1AAA0]">
 						{description}
 					</p>
-					<div className="flex items-center justify-center flex-wrap ">
-						<a
-							className="text-[#C07331] inline-flex items-center md:mb-2 lg:mb-0"
-							href={href}
-						>
-							<span className="hover:underline">Learn More</span>
-							<i className="bx bx-right-arrow-alt w-4 h-4 pl-2" />
-						</a>
-					</div>
+					<div className="flex items-center justify-center flex-wrap "></div>
 				</div>
 			</div>
 		</div>

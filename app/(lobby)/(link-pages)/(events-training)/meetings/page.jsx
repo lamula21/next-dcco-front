@@ -24,15 +24,23 @@ export default async function CalendarPage() {
 				<div className="container grid grid-cols-2 md:grid-cols-4  text-center gap-5">
 					<CardLink
 						src={ProfessionalLogo}
-						href="/"
+						href="/professional-development"
 						title="Professional Development"
 					/>
 
-					<CardLink src={IccLogo} href="/" title="ICC Training" />
+					<CardLink
+						src={IccLogo}
+						href="https://www.iccsafe.org/professional-development/development/"
+						title="ICC Training"
+					/>
 
-					<CardLink src={DccoaTrainingLogo} href="/" title="DCCOA Training" />
+					<CardLink
+						src={DccoaTrainingLogo}
+						href="/dccoa-training"
+						title="DCCOA Training"
+					/>
 
-					<CardLink src={EcoursesLogo} href="/" title="eCourses" />
+					<CardLink src={EcoursesLogo} href="/courses" title="E-courses" />
 				</div>
 			</section>
 		</main>

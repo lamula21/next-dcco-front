@@ -133,7 +133,7 @@ export function Navbar() {
 									</NavigationMenuLink>
 								</li>
 								<ListItem href="/join-us/membership" title="Membership">
-									Join our club.
+									Join us.
 								</ListItem>
 								<ListItem href="/join-us/sponsorship" title="Sponsorship">
 									Support our cause.
@@ -171,7 +171,7 @@ export function Navbar() {
 								</ListItem>
 
 								<ListItem href="/courses" title="eCourses">
-									Check out our new eCourses.
+									Check out our new E-courses.
 								</ListItem>
 
 								<ListItem href="/building-safety" title="Building Safety Month">

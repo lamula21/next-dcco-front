@@ -51,15 +51,17 @@ export default function StandardsPage() {
 				<SectionHeader subtitle="STANDARDS & RESOURCES" title="Useful Links" />
 
 				<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5  text-center gap-5">
-					<CardLink href="/" src={CareerLogo} title="Career Development" />
+					<CardLink
+						href="/professional-development"
+						src={CareerLogo}
+						title="Career Development"
+					/>
 
 					<CardLink href="/" src={StandardsLogo} title="Code & Standards" />
 
-					<CardLink href="/" src={GuideLogo} title="Reference Guides & Tools" />
+					<CardLink href="/meetings" src={MeetingsLogo} title="Meetings" />
 
-					<CardLink href="/" src={MeetingsLogo} title="Meetings" />
-
-					<CardLink href="/" src={PostLogo} title="Posts" />
+					<CardLink href="/posts" src={PostLogo} title="Posts" />
 				</div>
 			</section>
 		</main>
